@@ -1,5 +1,6 @@
 # Secure-Firewall-Configuration-for-Server-Protection
-The project aims to implement a robust firewall configuration to enhance server security by regulating incoming and outgoing network traffic. The firewall will be configured with a deny-by-default policy, allowing only essential services while blocking unauthorized access attempts. Key features include the allowance of HTTP versions 1.1, 2, and 3, secure SSH access with fail2ban protection, utilization of sshttp for SSH/HTTP(S) multiplexing on port 443, and proper logging of internet-facing traffic. Additionally, flood protection mechanisms will be implemented to mitigate potential denial-of-service (DoS) attacks, ensuring the stability and reliability of the server under high traffic conditions.
+
+The project aims to implement a robust iptables firewall configuration to enhance server security by regulating incoming and outgoing network traffic. The firewall will be configured with a deny-by-default policy, allowing only essential services while blocking unauthorized access attempts. Key features include the allowance of HTTP versions 1.1, 2, and 3, secure SSH access with fail2ban protection, utilization of sshttp for SSH/HTTP(S) multiplexing on port 443, and proper logging of internet-facing traffic. Additionally, flood protection mechanisms will be implemented to mitigate potential denial-of-service (DoS) attacks, ensuring the stability and reliability of the server under high traffic conditions.
 
 ## 1. Policy: Deny by Default
 - Configure iptables firewall to deny all incoming and outgoing traffic by default.
@@ -25,3 +26,4 @@ The project aims to implement a robust firewall configuration to enhance server 
   - Prevent UDP packet flood exceeding 10 per second, with a tolerance of 50.
   - Prevent TCP packet flood exceeding 50 per second, with a tolerance of 100.
   - Make an exception for SSH service to TCP flood protection.
+
